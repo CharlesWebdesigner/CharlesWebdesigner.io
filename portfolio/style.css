@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.countainer{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    width: 100
+}
+.center img{
+    background-image: cover;
+    background-size: cover;
+}
+.left h1{
+    font-size: 40px;
+    padding: 7px 10px;
+    margin-bottom: 15px;
+}
+.left span {
+    text-transform: capitalize;
+    color: #c94211;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+  }
+.left button,#home{
+    border:none;
+    padding:7px 30px ;
+    background-color: #ee541c;
+    color: #fff;
+    margin-top: 10%;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+}
+.countainer li{
+list-style: none;
+margin: 20px 0px;
+}
+.countainer a{
+    color: #fff;
+}
+.countainer a:hover{
+color: #50da50;
+font-size: 30px;
+}
+.right a{
+    color: #ee541c;
+    }
+    .right a:hover{
+        font-size: 16px;
+    }
+    .right p{
+        margin-top: 30px;
+        color: #808080;
+    }
+.left .material-symbols-outlined{
+    color: #fff;
+    text-align: center;
+}
+.sms{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.dd{
+    position: relative;
+    display: inline-block;
+}
+.dd-btn{
+    padding: 7px;
+    text-align: center;
+    background-color: #173459;
+    border: none;
+    width: 100px;
+    color: #f8f9f9;
+}
+.dd-content{
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+.dd:hover > .dd-content{
+    display: block;
+}
+.dd-content >a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color:#fff;
+}
+.dd-content >a:hover,.footer button{
+    color: #fff;
+    background-color:#ee541c;
+}
+.header{
+    position: relative;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.dd {
+float: right;
+    left: 0px;
+    top: 0px;
+}
+.nav{
+    float: left;
+    top: 0px;
+    left: 0px;
+}
+.material-symbols-outlined{
+    color: #fff;
+    text-align: center;
+}
+.nav span{
+font-size: 16px;
+font-weight: 400;
+margin-left: 30px;
+}
+.nav .material-symbols-outlined{
+    color:lime;
+}
+.sms a,.left button a{
+text-decoration: none;
+}
+.sms a:hover,.left button a:hover{
+    font-size: 16px;
+}
+/*skills*/
+#skills{
+    background-color: #fdf9f9;
+    border-top: 1px solid #b43838;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+#skills h2{
+    color: #b43838;
+    text-decoration: underline #4fcc4f;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600px;
+}
+.pic1 img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.pic2 img{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.content{
+    display: block;
+    text-align: center;
+    background-color: #fdf9f9;
+    border-top: 3px solid #f15353;
+    padding: 50px 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 100px auto;
+}
+.content .material-symbols-outlined{
+    color: #c94211;
+}
+footer{
+    color: #fdf9f9;
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+}
+.footer input,.footer button{
+    outline: none;
+    padding: 5px 7px;
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+@media(min-width:768px){
+.nav h1{
+    font-size: 20px;
+}
+.countainer{
+    flex-basis: 30%;
+    flex-wrap: wrap;
+}
+.counter .header{
+    width: 100%;
+}
+.right>.sms{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    color: aqua;
+}
+#skill{
+    width: 100%;
+    flex-wrap: wrap; 
+}
+}
+@media(max-width:767px){
+    .countainer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 85%;
+    }
+    .header{
+        display: inline-block;
+        margin: 0 auto;
+        width: 85%;
+    }
+    .center img{
+    background-position: center;
+    background-size: cover;
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+    }
+.center{
+    margin-bottom: 3px;
+}
+    .dd-content {
+        background-color: lime;
+    }
+    .sms{
+        display: flex;
+        position: absolute;
+        bottom: 0px;
+        left: 10px;    
+    }
+    .sms:hover{
+        color: #50da50;
+    }
+    #skills{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #skills h2{
+        text-align: center;
+    }
+}
